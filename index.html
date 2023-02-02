@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Fashion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img class="logo" src="/images/img/logo.png" alt="logo" />
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Category</a></li>
+          </ul>
+        </nav>
+        <img class="cart" src="/images/img/cart.png" alt="cart" />
+      </div>
+      <div class="content">
+        <a href="#" class="btn">2023 Collections</a>
+        <h1>You should always feel pretty</h1>
+        <p>Clothes that are sure to heat up your winter.</p>
+        <div class="arrow-icons">
+          <img src="/images/img/back-arrow.png" alt="#" />
+          <img src="/images/img/next-arrow.png" alt="#" />
+        </div>
+      </div>
+      <img
+        src="/images/img/img.png"
+        alt="feature"
+        class="feature-img reveal"
+        id="reveal"
+      />
+      <div class="social-links" id="links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", (event) => {
+        const reveal = document.getElementById("reveal");
+        const links = document.getElementById("links");
+        reveal.classList.add("active");
+        links.classList.add("links");
+        console.log("page is fully loaded");
+      });
+    </script>
+  </body>
+</html>
